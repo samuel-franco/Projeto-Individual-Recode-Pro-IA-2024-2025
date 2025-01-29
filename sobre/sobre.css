@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #0a0a0a;
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Branco */
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff !important; 
+}
+
+.container {
+    max-width: 960px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-top: 2rem; /* Espaço acima do conteúdo do article */
+}
+
+article img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto;
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 10px auto; /* Centraliza a imagem */   
+}
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    article{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    article h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 3rem 1rem; /* Ajustado o padding para rem */
+}
+
+.cont-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Adicionado padding horizontal para telas menores */
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha */
+    gap: 2rem; /* Espaçamento entre as colunas */
+}
+
+.coluna {
+    flex: 1 1 200px; /* Largura flexível com largura mínima */
+    box-sizing: border-box; /* Inclui padding e borda na largura */
+    padding: 1rem; /* Adicionado padding interno */
+    min-width: 200px; /* Largura minima para as colunas */
+}
+
+.coluna h2, .coluna h3{
+    margin-bottom: 1rem;
+}
+
+.medias-socias ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Para alinhar os ícones horizontalmente */
+    gap: 1rem;
+}
+
+.coluna a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+.medias-socias li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.medias-socias li a:hover {
+    color: #007bff; /* Cor azul ao passar o mouse */
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Linha divisória suave */
+}
+
+.formu-foot form {
+    display: flex; /* Organiza os elementos em linha */
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+#inputfooter[type="email"] {
+    flex-grow: 1; /* Permite que o input cresça */
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#inputfooter[type="email"],
+#botaofooter {
+    outline: none;
+    font-size: 1rem;
+}
+
+#botaofooter {
+    background-color: #3399CC;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Arredonda apenas o lado direito */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */ 
+    cursor: pointer;  
+}
+
+#botaofooter:hover {
+    background-color: #0077b3; /* Azul um pouco mais escuro no hover */
+}
+
+/* Media Query para telas menores (ex: tablets e celulares) */
+@media (max-width: 768px) {
+    .linha {
+        flex-direction: column; /* Empilha as colunas verticalmente */
+        align-items: center; /* Centraliza as colunas */
+    }
+
+    .coluna {
+        width: 100%; /* Colunas ocupam toda a largura */
+        text-align: center; /* Centraliza o texto dentro das colunas */
+        margin-bottom: 2rem; /* Espaçamento entre as colunas empilhadas */
+        min-width: 0; /* Remove o min-width para melhor ajuste */
+        padding: 1rem 0;
+    }
+    .medias-socias ul{
+        justify-content: center;
+    }
+    .formu-foot form{
+        flex-direction: column;
+    }
+    #inputfooter[type="email"]{
+        border-radius: 5px 5px 0 0;
+        margin-bottom: 1rem;
+    }
+    #botaofooter{
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #0a0a0a;
+    font-family: poppins, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Branco */
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff !important; 
+}
+
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+#myCarousel h1 {
+    font-family: poppins, sans-serif;
+    font: bold 300;
+}
+
+.carousel-item {
+    background-position: center center;
+}
+
+.carousel-item img {
+    width: 176ch;
+    height: 50ch; /* Ajusta a imagem para a altura desejada dentro do carrossel */
+    object-fit: cover; /* Ajusta a imagem para preencher o container */
+    
+}
+
+.carousel-image {
+    height: 400px; /* Altura fixa */
+    width: auto; /* Largura automática para manter a proporção */
+}
+
+    /* para o botão do carrossel Next e Previu
+    background-color: rgba(0, 0, 0, 0.5);
+    */
+
+.pesquisar-passagem {
+    background-color: #1e40af;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    border: none;
+    outline: none;
+}
+
+.input-origem, .input-destino, .input-data {
+    position: relative;
+    width: 200px;
+}
+
+.pesquisar-passagem i {
+    position: absolute;
+    right: 10px; /* Ícone posicionado à direita */
+    top: 50%;
+    transform: translateY(-50%);
+    color: indigo;
+}
+
+.pesquisar-passagem input[type="text"], 
+.pesquisar-passagem input[type="date"] {
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+    border: solid 1px #f8f9fa;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-dark);
+    box-sizing: border-box;
+}
+
+.pesquisar-passagem input::placeholder {
+    padding-left: 1px;
+}
+
+.pesquisar-passagem input:focus {
+    outline: 2px solid #0087EF;
+}   
+  
+
+.botao-pesquisar-passagem {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    transition: 0.3s;
+    color: blue;
+    cursor: pointer;
+}
+
+.botao-pesquisar-passagem:hover {
+    background-color: #ccc;
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 3ch;
+    transition: 0.3s;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+.servicos {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 1rem;
+ margin: 3rem auto 1rem;
+ max-width: 1200px;
+}
+
+.card-servicos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    /* max-width: 50ch; Removido */
+    border-radius: 8px; /* Adicionado bordas arredondadas */
+    overflow: hidden; /* Evita que o conteúdo vaze */
+}
+
+.card-servicos img {
+    max-width: 70px;
+    height: auto;
+    display: block;
+}
+
+.card-servicos h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.card-servicos p {
+    color: var(--text-light);
+    line-height: 1.5rem;
+}
+
+.container-destinos {
+    width: 90%; /* Largura em porcentagem para responsividade */
+    max-width: 1200px; /* Largura máxima para telas grandes */
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 3rem auto; /* Margem simplificada */
+}
+
+.container-destino h1 {
+    margin-bottom: 1rem;
+}
+
+.container-destinos {
+    margin-bottom: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    gap: 2rem;
+}
+
+.grid-card {
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 3/4; /* Mantém a proporção da imagem */
+}
+
+.overlay { /* Estilos para o overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+    transition: background-color 0.5s;
+    z-index: 1; /* Para ficar acima da imagem */
+    pointer-events: none; /* Para não interferir nos eventos do mouse */
+}
+
+.grid-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    z-index: 0; /* Para ficar atrás do overlay */
+}
+
+.grid-card:hover .overlay { /* Escurece o overlay no hover */
+    background-color: rgba(0, 0, 0, 0.3); /* Ajuste a opacidade aqui */
+}
+
+.grid-card:hover {
+    opacity: 0.7;
+}
+
+.grid-card:hover .nome-imagem {
+    opacity: 1; /* Nome visível no hover */
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.nome-imagem {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;  
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 0.5rem 1rem; /* Usar rem para melhor escalabilidade */
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.destinos-populares img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition: 2s;
+}
+
+.botao {
+    position: absolute;
+    display: block;
+    text-align: center;
+    background-color: #c7f900;
+    color: #0a0a0a;
+    padding: 5px;
+    width: 10%;
+    transform: translateX(75%) translateY(-250%);
+    justify-content: space-around;
+}
+
+.container h1 {
+    color: #fff;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 70px;
+    font: bold;
+}
+
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+
+.banner-desconto {
+    background-image: url(/imagens/desconto.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('/imagens/desconto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f9fafb;
+    min-height: 300px;
+    padding: 2rem;
+}
+
+.desconto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.desconto h1 {
+    font-size: 2.5rem; /* Tamanho da fonte ajustável */
+    margin-bottom: 1rem;
+}
+
+.desconto h2 {
+    font-size: 1.2rem; /* Tamanho da fonte ajustável */
+    margin-bottom: 2rem;
+}
+
+.botao-desconto {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+}
+
+.botao-desconto button {
+    background-color: #007bff; /* Ou a cor que você preferir */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.botao-desconto button:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) { /* Para tablets e telas menores */
+    .banner-desconto {
+        min-height: 200px; /* Altura mínima menor em telas menores */
+        padding: 1rem;
+    }
+
+    .desconto h1 {
+        font-size: 2rem; /* Tamanho da fonte menor */
+    }
+
+    .desconto h2 {
+        font-size: 1rem; /* Tamanho da fonte menor */
+    }
+}
+
+
+.melhores-pac {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    background-color: #fff;
+    padding: 2rem; /* Padding mais consistente */   
+}
+
+.melhores-pac h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.melhores-pac p {
+    margin-bottom: 2rem;
+    color: #0a0a0a;
+    text-align: center;
+}
+
+.container-pac {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+    grid-gap: 2rem; /* Aumentei o gap para melhor espaçamento */
+}
+
+.pac {
+    border-radius: 8px; /* Bordas mais arredondadas */
+    overflow: hidden; /* Garante que a imagem não vaze */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: transform 0.3s ease; /* Transição suave no hover */
+}
+
+.pac:hover {
+    transform: scale(1.05); /* Efeito de zoom no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
+}
+
+.pac img {
+    width: 100%;
+    height: 300px; /* Altura fixa para as imagens */
+    object-fit: cover;
+    display: block;
+}
+
+.pac h3 {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.pac p {
+    margin: 0 1rem 1rem;
+    text-align: left;
+    color: #555;
+    font-size: 14px;
+}
+
+.package-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+
+.footeer-pac {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.reservar-pedido {
+    background-color: #007bff; /* Cor do botão (azul) */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.reservar-pedido:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+#valor {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.containerDopoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 2rem; /* Adicionado padding para melhor espaçamento em telas menores */
+}
+
+.depoimentos-clientes {
+    text-align: center;
+    background-color: #f9f9f9;
+    width: 90%; /* Largura em porcentagem para responsividade */
+    padding: 2rem; /* Padding consistente */
+    margin: 0 auto;
+    position: relative;
+    max-width: 900px; /* Largura máxima para telas maiores */
+    box-sizing: border-box; /* Importante para o padding não afetar a largura total */
+}
+
+.depoimentos-clientes h2 {
+    margin-bottom: 1rem;
+    color: #0a0a0a;
+}
+
+.depoimentos-clientes p {
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+.slider-dep {
+    display: flex;
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; /* Força o "snap" para os cards */
+    width: 100%;
+    scroll-padding: 1rem; /* Espaçamento para o scroll snap */
+}
+
+.cardd-dep {
+    flex: 0 0 80%; /* Cada card ocupa 80% da largura da tela */
+    scroll-snap-align: start;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    margin: 0 1rem; /* Espaçamento entre os cards */
+    min-width: 250px; /* Largura mínima para evitar que os cards fiquem muito pequenos */
+    box-sizing: border-box;
+}
+
+.cardd-dep:first-child {
+    margin-left: 0;
+}
+
+.cardd-dep:last-child{
+    margin-right: 0;
+}
+
+.perfil-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.depp-texto {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-size: 1rem; /* Tamanho da fonte em rem */
+    line-height: 1.6;
+}
+
+.depp-texto::before {
+    position: absolute;
+    top: -0.5rem; /* Ajuste fino */
+    left: -0.5rem; /* Ajuste fino */
+    font-size: 1.5rem;
+    color: #007bff;
+    font-family: serif;
+}
+
+.client-info {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9rem; /* Tamanho da fonte em rem */
+}
+
+.slider-indicador {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.indic {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicionada transição */
+}
+
+.indic.active {
+    background-color: #007bff;
+}
+
+/* Media Query para telas menores que 768px (tablets e celulares menores) */
+@media (max-width: 768px) {
+    .cardd-dep {
+        flex: 0 0 95%; /* Cards ocupam quase toda a largura em telas menores */
+        min-width: 0; /* Remove a largura mínima para melhor ajuste */
+        margin: 0 0.5rem;
+    }
+
+    .depoimentos-clientes {
+        padding: 1rem;
+    }
+    .depp-texto::before{
+        font-size: 1rem;
+        top: -0.2rem;
+        left: -0.2rem;
+    }
+}
+
+.newsletter {
+    background-color: #003366; /* Azul escuro do fundo */
+    color: white;
+    padding: 3rem 1rem; /* Padding superior/inferior e laterais com rem */
+    text-align: center;
+}
+
+.cont-newslett {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente em telas menores */
+    align-items: center; /* Centraliza verticalmente */
+    max-width: 900px; /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    gap: 2rem; /* Espaçamento entre os elementos com gap */
+}
+
+.textto-inscrever {
+    text-align: left;
+    max-width: 400px;
+}
+
+.textto-inscrever h2 {
+    font-size: 1.75rem; /* Tamanho da fonte em rem, um pouco menor */
+    margin-bottom: 1rem;
+}
+
+.textto-inscrever p {
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.for-newsltt {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.for-newsltt input[type="email"] {
+    flex-grow: 1;
+    padding: 1rem; /* Padding em rem */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 5px 0 0 5px; /* Arredonda apenas o lado esquerdo */
+    outline: none; /* Remove a borda padrão ao clicar */
+    color: #333; /* Cor do texto dentro do input */
+    font-size: 1rem; /* Tamanho da fonte em rem */
+}
+
+.for-newsltt button {
+    background-color: #3399CC; /* Azul mais claro do botão */
+    color: white;
+    padding: 1rem 1.5rem; /* Padding em rem */
+    border: none;
+    border-radius: 0 5px 5px 0; /* Arredonda apenas o lado direito */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+    font-size: 1rem; /* Tamanho da fonte em rem */
+}
+
+.for-newsltt button:hover {
+    background-color: #0077b3; /* Azul um pouco mais escuro no hover */
+}
+
+/* Media Query para telas maiores que 768px (tablets e desktops) */
+@media (min-width: 768px) {
+    .cont-newslett {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; /* Alinha os itens ao topo */
+        gap: 3rem; /* Aumenta o espaçamento entre o texto e o formulário */
+    }
+
+    .textto-inscrever {
+        text-align: left;
+        margin: 0; /* Remove a margem inferior */
+    }
+    .textto-inscrever h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Media Query para telas menores que 480px (smartphones menores) */
+@media (max-width: 480px) {
+    .textto-inscrever h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título em telas muito pequenas */
+    }
+    .for-newsltt {
+        flex-direction: column; /* Empilha o input e o botão verticalmente */
+    }
+    .for-newsltt input[type="email"] {
+        border-radius: 5px 5px 0 0; /* Arredonda o input em cima */
+        margin-bottom: 10px;
+    }
+    .for-newsltt button {
+        border-radius: 0 0 5px 5px; /* Arredonda o botão embaixo */
+        width: 100%; /* O botão ocupa toda a largura */
+        padding: 1rem;
+    }
+}
+
+.text-center h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.text-center h2 {
+    font-size: 1.75rem;
+}
+
+.service-item h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-lg-4, .col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.mb-4{
+    margin-bottom: 1.5rem;
+}
+
+.service-item{
+    background-color: white;
+    text-align: center;
+    padding: 5rem 4rem;
+}
+
+.mb-2{
+    margin-bottom: 0.5rem;
+}
+
+.py-5{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.px-4{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.fa{
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.mx-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 3rem 1rem; /* Ajustado o padding para rem */
+}
+
+.cont-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Adicionado padding horizontal para telas menores */
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha */
+    gap: 2rem; /* Espaçamento entre as colunas */
+}
+
+.coluna {
+    flex: 1 1 200px; /* Largura flexível com largura mínima */
+    box-sizing: border-box; /* Inclui padding e borda na largura */
+    padding: 1rem; /* Adicionado padding interno */
+    min-width: 200px; /* Largura minima para as colunas */
+}
+
+.coluna h2, .coluna h3{
+    margin-bottom: 1rem;
+}
+
+.medias-socias ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Para alinhar os ícones horizontalmente */
+    gap: 1rem;
+}
+
+.coluna a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+.medias-socias li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.medias-socias li a:hover {
+    color: #007bff; /* Cor azul ao passar o mouse */
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Linha divisória suave */
+}
+
+.formu-foot form {
+    display: flex; /* Organiza os elementos em linha */
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+#inputfooter[type="email"] {
+    flex-grow: 1; /* Permite que o input cresça */
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#inputfooter[type="email"],
+#botaofooter {
+    outline: none;
+    font-size: 1rem;
+}
+
+#botaofooter {
+    background-color: #3399CC;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Arredonda apenas o lado direito */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */ 
+    cursor: pointer;  
+}
+
+#botaofooter:hover {
+    background-color: #0077b3; /* Azul um pouco mais escuro no hover */
+}
+
+/* Media Query para telas menores (ex: tablets e celulares) */
+@media (max-width: 768px) {
+    .linha {
+        flex-direction: column; /* Empilha as colunas verticalmente */
+        align-items: center; /* Centraliza as colunas */
+    }
+
+    .coluna {
+        width: 100%; /* Colunas ocupam toda a largura */
+        text-align: center; /* Centraliza o texto dentro das colunas */
+        margin-bottom: 2rem; /* Espaçamento entre as colunas empilhadas */
+        min-width: 0; /* Remove o min-width para melhor ajuste */
+        padding: 1rem 0;
+    }
+    .medias-socias ul{
+        justify-content: center;
+    }
+    .formu-foot form{
+        flex-direction: column;
+    }
+    #inputfooter[type="email"]{
+        border-radius: 5px 5px 0 0;
+        margin-bottom: 1rem;
+    }
+    #botaofooter{
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+    }
+}

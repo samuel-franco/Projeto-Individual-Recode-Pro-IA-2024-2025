@@ -1,0 +1,30 @@
+Fonte 1: Work+Sans Para textos normais
+
+Paragrafos h1: Nunito Sans:
+
+Fonte 2: Knewave
+
+Fonte 3 Para botões: Lato
+Fonte 4: Montserrat
+Fonte 5: Poppins
+
+
+## Cores
+Para os botões #c7f900
+textos dos links #000
+Outro tipo de black #0a0a0a
+
+
+
+
+
+
+#074066
+#092E47
+#092538
+#0A1821
+#0A1821
+#6B7280
+#EDEEF0
+#FFFFFF
+#fafafa
