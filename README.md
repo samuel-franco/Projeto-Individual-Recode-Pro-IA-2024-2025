@@ -1,10 +1,8 @@
-# Projeto-Individual-Recode-Pro-IA-2024-2025
+# Projeto Individual Recode Pro IA - 2024/2025
 
 Repositório do projeto de agência de viagens
 
-Repositório para deixar salvo conteúdos estudados e os projetos feitos.
-
-# 🚀 Nome do Projeto
+# 🚀 Agencia de viaagens - airlineviagens.com
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Em%20Desenvolvimento-brightgreen)
 ![Licença](https://img.shields.io/badge/License-MIT-blue)
@@ -22,8 +20,9 @@ Breve descrição do seu projeto aqui. Explique o propósito e os principais obj
 
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 
 ## 🚀 Como Executar o Projeto
 
@@ -75,13 +74,13 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 👨‍💻 Autor
 
-Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario)
+Feito por [Samuel Franco](https://github.com/samuel-franco)
 
 ## 📞 Contato
 
-- Email: seu-email@exemplo.com
+- Email: samuelfranko66@gmail.com
 - LinkedIn: [Seu LinkedIn](https://www.linkedin.com/in/seu-perfil/)
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+- GitHub: [@seu-usuario](https://github.com/samuel-franco)
 
 ---
 
