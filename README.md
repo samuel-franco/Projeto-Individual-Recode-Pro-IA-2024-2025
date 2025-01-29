@@ -2,7 +2,7 @@
 
 Repositório do projeto de agência de viagens
 
-# 🚀 Agencia de viaagens - airlineviagens.com
+# 🚀 Agencia de viagens - airlineviagens.com
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Em%20Desenvolvimento-brightgreen)
 ![Licença](https://img.shields.io/badge/License-MIT-blue)
