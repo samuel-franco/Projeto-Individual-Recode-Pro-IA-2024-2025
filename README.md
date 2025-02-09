@@ -54,6 +54,19 @@ nome-do-projeto/
 └── LICENSE
 ```
 
+## 📦 Banco de dados do projeto - Modelo conceitual 
+
+### Página de cadastro e Página de login.
+
+![image](https://github.com/user-attachments/assets/d5c5738c-d072-439a-99a6-57c45b5a7d74)
+
+
+![image](https://github.com/user-attachments/assets/dbfeb9c3-450a-416a-9355-d6445d018b46)
+
+![image](https://github.com/user-attachments/assets/99e890a4-17fb-4729-9282-22c6b7244438)
+
+
+
 ## 🎯 Funcionalidades
 
 - [ ] Funcionalidade 1
