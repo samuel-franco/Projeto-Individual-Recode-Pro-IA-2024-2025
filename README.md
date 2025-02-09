@@ -78,8 +78,8 @@ Feito por [Samuel Franco](https://github.com/samuel-franco)
 ## 📞 Contato
 
 - Email: samuelfranko66@gmail.com
-- LinkedIn: [Seu LinkedIn](https://www.linkedin.com/in/samuelfrancodev/)
-- GitHub: [@seu-usuario](https://github.com/samuel-franco)
+- LinkedIn: [Meu LinkedIn](https://www.linkedin.com/in/samuelfrancodev/)
+- GitHub: [Meu Github](https://github.com/samuel-franco)
 
 ---
 
