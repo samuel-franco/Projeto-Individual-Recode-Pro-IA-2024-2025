@@ -74,10 +74,55 @@ nome-do-projeto/
     Benefício: Automatiza o processo de reserva, tornando-o mais eficiente e conveniente para os clientes.
 
 - [ ] Funcionalidade 2
-- [ ] Funcionalidade 3
-- [ ] Funcionalidade 4
+      
+    2. Busca Avançada de Destinos
+       
+    Descrição: Implementar um sistema de busca com filtros para ajudar os usuários a encontrar destinos e pacotes de viagem de acordo com suas preferências.
 
-## 🤝 Como Contribuir
+    Funcionalidades:
+
+        Filtros por preço, destino, tipo de viagem (família, aventura, luxo, etc.), duração e datas.
+
+        Ordenação por relevância, preço ou popularidade.
+
+        Sugestões de destinos com base no histórico de buscas ou preferências do usuário.
+
+    Benefício: Melhora a usabilidade do site, permitindo que os usuários encontrem rapidamente o que procuram.
+
+- [ ] Funcionalidade 3
+      
+    3. Avaliações e Comentários de Clientes
+
+    Descrição: Permitir que os usuários deixem avaliações e comentários sobre os destinos e pacotes de viagem.
+
+    Funcionalidades:
+
+        Sistema de classificação por estrelas (1 a 5).
+
+        Comentários públicos com opção de upload de fotos.
+
+        Moderação de comentários para evitar conteúdo inadequado.
+
+        Exibição das avaliações mais úteis ou recentes.
+
+    Benefício: Aumenta a confiança dos usuários, fornecendo feedbacks reais de outros clientes.
+
+- [ ] Funcionalidade 4
+      4. Integração com Redes Sociais e Compartilhamento
+
+    Descrição: Facilitar o compartilhamento de destinos, pacotes e conteúdos do blog nas redes sociais.
+
+    Funcionalidades:
+
+        Botões de compartilhamento para redes como Facebook, Instagram, Twitter e WhatsApp.
+
+        Login social (via Google, Facebook, etc.) para simplificar o cadastro e o acesso dos usuários.
+
+        Integração com feeds de redes sociais para exibir fotos e depoimentos de clientes.
+
+    Benefício: Aumenta o engajamento e a visibilidade da agência, atraindo mais tráfego para o site.
+
+## 🤝 Como Contribuir (No momnento, não estou aceitando contrubuições*)
 
 1. Faça um fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
@@ -87,11 +132,36 @@ nome-do-projeto/
 
 ## 📝 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a minha licença. 
 
 ## 👨‍💻 Autor
 
 Feito por [Samuel Franco](https://github.com/samuel-franco)
+
+<h2 id="colab">🤝 Colaboradores</h2>
+
+Um agradecimento especial a todas as pessoas que contribuíram para este projeto.
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://t.ctcdn.com.br/n7eZ74KAcU3iYwnQ89-ul9txVxc=/400x400/smart/filters:format(webp)/i490769.jpeg" width="100px;" alt="Elon Musk Picture"/><br>
+        <sub>
+          <b>Elon Musk</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <sub>
+          <b>Steve Jobs</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## 📞 Contato
 
