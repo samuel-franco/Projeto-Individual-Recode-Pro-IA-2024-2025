@@ -57,6 +57,21 @@ nome-do-projeto/
 ## 🎯 Funcionalidades
 
 - [ ] Funcionalidade 1
+- [ 1. Sistema de Reservas Integrado
+
+    Descrição: Permitir que os usuários reservem pacotes de viagem diretamente no site.
+
+    Funcionalidades:
+
+        Seleção de datas, número de pessoas e opções de hospedagem.
+
+        Integração com um calendário para verificar disponibilidade.
+
+        Pagamento online seguro via gateways como PayPal, Stripe ou Mercado Pago.
+
+        Envio de confirmação de reserva por e-mail.
+
+    Benefício: Automatiza o processo de reserva, tornando-o mais eficiente e conveniente para os clientes.] 
 - [ ] Funcionalidade 2
 - [ ] Funcionalidade 3
 - [ ] Funcionalidade 4
