@@ -9,7 +9,7 @@ Repositório do projeto de agência de viagens
 
 ## 📋 Descrição
 
-Breve descrição do seu projeto aqui. Explique o propósito e os principais objetivos do projeto de forma clara e concisa.
+Este repositório tem como objetivo mostrar o desenvolvimento do projeto individual do curso da Recode Pro IA turma 2024/2025. O tema consiste em ser uma agência de viagens onde terá um front-end básico com html, css e Bootstrap com a implementação da responsividade em todo o site. Com o decorrer do curso será desenvlvido o back-end com outras tecnolgias.
 
 ## ✨ Demonstração
 
