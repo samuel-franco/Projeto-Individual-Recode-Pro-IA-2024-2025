@@ -9,7 +9,9 @@ Repositório do projeto de agência de viagens
 
 ## 📋 Descrição
 
-Este repositório tem como objetivo mostrar o desenvolvimento do projeto individual do curso da Recode Pro IA turma 2024/2025. O tema consiste em ser uma agência de viagens onde terá um front-end básico com html, css e Bootstrap com a implementação da responsividade em todo o site. Com o decorrer do curso será desenvlvido o back-end com outras tecnolgias.
+Este repositório tem como objetivo mostrar o desenvolvimento do projeto individual do curso da Recode Pro IA turma 2024/2025.
+
+O projeto consiste na criação de um site para uma agência de viagens, utilizando HTML, CSS e o framework Bootstrap. O objetivo é desenvolver uma plataforma responsiva, com um design atrativo e funcional, que ofereça uma experiência de usuário intuitiva tanto em dispositivos móveis quanto em desktops. O site terá um front-end bem estruturado e, futuramente, será integrado com um back-end para gerenciar funcionalidades mais complexas, como reservas, autenticação de usuários e gerenciamento de pacotes de viagens.
 
 ## ✨ Demonstração
 
