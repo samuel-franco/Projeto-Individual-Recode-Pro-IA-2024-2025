@@ -135,7 +135,7 @@ nome-do-projeto/
 
     Benefício: Aumenta o engajamento e a visibilidade da agência, atraindo mais tráfego para o site.
 
-## 🤝 Como Contribuir (No momnento, não estou aceitando contribuições*)
+## 🤝 Como Contribuir
 
 1. Faça um fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
